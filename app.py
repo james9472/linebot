@@ -39,10 +39,7 @@ def handle_message(event):
     #reply_basic = TextSendMessage(text=f"{get_message}")
     reply_basic=event.message.text
     if reply_basic == 'A': 
-        reply = ImageSendMessage(
-        original_content_url='https://example.com/original.jpg',
-        preview_image_url='https://example.com/preview.jpg'
-        )
+        reply = ImageSendMessage(original_content_url='https://example.com/original.jpg',preview_image_url='https://example.com/preview.jpg')
      #   line_bot_api.reply_message(event.reply_token,reply)
        # reply = TextSendMessage(text=f"A10")
     elif reply_basic == 'B': 
@@ -55,4 +52,5 @@ def handle_message(event):
     #reply = TextSendMessage(text=f"hello")
     #reply = 'here'
     line_bot_api.reply_message(event.reply_token, reply)
+    #line_bot_api.reply_message(event.reply_token,reply)
     #ine_bot_api.reply_message('here')
