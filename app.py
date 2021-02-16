@@ -53,8 +53,8 @@ def handle_message(event):
      original_content_url='https://i.imgur.com/mRMRIKz.jpg',
      preview_image_url='https://i.imgur.com/mRMRIKz.jpg'
 )
-        reply1 = TextSendMessage(text=f"地址是 Aschön 台北市大安區敦化南路一段161巷69弄6號")
-        line_bot_api.reply_message(event.reply_token, reply1)
+       # reply1 = TextSendMessage(text=f"地址是 Aschön 台北市大安區敦化南路一段161巷69弄6號")
+        #line_bot_api.reply_message(event.reply_token, reply1)
         line_bot_api.reply_message(event.reply_token, reply)
     #elif reply_basic == 'C': 
      #   reply = TextSendMessage(text=f"C10")
