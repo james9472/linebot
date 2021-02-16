@@ -36,7 +36,8 @@ def handle_message(event):
     get_message = event.message.text
 
     # Send To Line
-    reply_basic = TextSendMessage(text=f"{get_message}")
+    #reply_basic = TextSendMessage(text=f"{get_message}")
+    reply_basic=event.message.text
     if reply_basic == 'A': 
         reply = TextSendMessage(text=f"A10")
     elif reply_basic == 'B': 
