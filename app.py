@@ -37,7 +37,7 @@ def handle_message(event):
 
     # Send To Line
     #reply_basic = TextSendMessage(text=f"{get_message}")
-   # reply_basic=event.message.text
+    reply_basic=event.message.text
     if reply_basic == 'A': 
         reply = ImageSendMessage(
      original_content_url='https://i.imgur.com/Ba9feJb.jpg',
