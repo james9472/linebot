@@ -39,10 +39,11 @@ def handle_message(event):
     #reply_basic = TextSendMessage(text=f"{get_message}")
    # reply_basic=event.message.text
   #  if reply_basic == 'A': 
-    reply = ImageSendMessage(
-    original_content_url='https://i.imgur.com/Ba9feJb',
-    preview_image_url='https://i.imgur.com/Ba9feJb'
+    message = ImageSendMessage(
+     original_content_url='https://example.com/original.jpg',
+     preview_image_url='https://example.com/preview.jpg'
 )
+    line_bot_api.reply_message(event.reply_token, message)
       #  reply = ImageSendMessage(original_content_url='https://ppt.cc/ffOxsx@.jpg',preview_image_url='https://ppt.cc/ffOxsx@.jpg')
      #   line_bot_api.reply_message(event.reply_token,reply)
        # reply = TextSendMessage(text=f"A10")
