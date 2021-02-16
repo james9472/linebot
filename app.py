@@ -36,17 +36,17 @@ def handle_message(event):
     get_message = event.message.text
 
     # Send To Line
-    reply_basic = TextSendMessage(text=f"{get_message}")
-    if reply_basic === 'A' : 
-        reply = TextSendMessage(text=f"A10")
-    elif reply_basic === 'B' : 
-        reply = TextSendMessage(text=f"B10")
-    elif reply_basic === 'C' : 
-        reply = TextSendMessage(text=f"C10")
-    elif reply_basic === 'D' : 
-        reply = TextSendMessage(text=f"D10")
+   # reply_basic = TextSendMessage(text=f"{get_message}")
+   # if reply_basic === 'A' : 
+   #     reply = TextSendMessage(text=f"A10")
+   # elif reply_basic === 'B' : 
+   #     reply = TextSendMessage(text=f"B10")
+   # elif reply_basic === 'C' : 
+   #     reply = TextSendMessage(text=f"C10")
+   # elif reply_basic === 'D' : 
+   #     reply = TextSendMessage(text=f"D10")
        
-   # reply = TextSendMessage(text=f"hello")
+    reply = TextSendMessage(text=f"hello")
     #reply = 'here'
     line_bot_api.reply_message(event.reply_token, reply)
     #ine_bot_api.reply_message('here')
