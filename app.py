@@ -6,7 +6,7 @@ from flask import Flask, abort, request
 # https://github.com/line/line-bot-sdk-python
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
-from linebot.models import MessageEvent, TextMessage, TextSendMessage
+from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageSendMessage
 
 app = Flask(__name__)
 
@@ -38,21 +38,21 @@ def handle_message(event):
     # Send To Line
     #reply_basic = TextSendMessage(text=f"{get_message}")
    # reply_basic=event.message.text
-  #  if reply_basic == 'A': 
-    message = ImageSendMessage(
+    if reply_basic == 'A': 
+        reply = ImageSendMessage(
      original_content_url='https://i.imgur.com/Ba9feJb.jpg',
      preview_image_url='https://i.imgur.com/Ba9feJb.jpg'
 )
-    line_bot_api.reply_message(event.reply_token, message)
+    #line_bot_api.reply_message(event.reply_token, message)
       #  reply = ImageSendMessage(original_content_url='https://ppt.cc/ffOxsx@.jpg',preview_image_url='https://ppt.cc/ffOxsx@.jpg')
      #   line_bot_api.reply_message(event.reply_token,reply)
        # reply = TextSendMessage(text=f"A10")
-    #elif reply_basic == 'B': 
-    #    reply = TextSendMessage(text=f"B10")
-    #elif reply_basic == 'C': 
-    #    reply = TextSendMessage(text=f"C10")
-    #elif reply_basic == 'D': 
-    #    reply = TextSendMessage(text=f"D10")
+    elif reply_basic == 'B': 
+        reply = TextSendMessage(text=f"B10")
+    elif reply_basic == 'C': 
+        reply = TextSendMessage(text=f"C10")
+    elif reply_basic == 'D': 
+        reply = TextSendMessage(text=f"D10")
        
     #reply = TextSendMessage(text=f"hello")
     #reply = 'here'
