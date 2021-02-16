@@ -37,13 +37,13 @@ def handle_message(event):
 
     # Send To Line
     reply_basic = TextSendMessage(text=f"{get_message}")
-    if reply_basic === A : 
+    if reply_basic === 'A' : 
         reply = TextSendMessage(text=f"A10")
-    elif reply_basic === B : 
+    elif reply_basic === 'B' : 
         reply = TextSendMessage(text=f"B10")
-    elif reply_basic === C : 
+    elif reply_basic === 'C' : 
         reply = TextSendMessage(text=f"C10")
-    elif reply_basic === D : 
+    elif reply_basic === 'D' : 
         reply = TextSendMessage(text=f"D10")
        
    # reply = TextSendMessage(text=f"hello")
