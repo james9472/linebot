@@ -37,21 +37,21 @@ def handle_message(event):
 
     # Send To Line
     #reply_basic = TextSendMessage(text=f"{get_message}")
-    reply_basic=event.message.text
-    if reply_basic == 'A': 
-        reply = ImageSendMessage(
-    original_content_url='https://ppt.cc/ffOxsx@.jpg',
-    preview_image_url='https://ppt.cc/ffOxsx@.jpg'
+   # reply_basic=event.message.text
+  #  if reply_basic == 'A': 
+    reply = ImageSendMessage(
+    original_content_url='https://i.imgur.com/Ba9feJb',
+    preview_image_url='https://i.imgur.com/Ba9feJb'
 )
       #  reply = ImageSendMessage(original_content_url='https://ppt.cc/ffOxsx@.jpg',preview_image_url='https://ppt.cc/ffOxsx@.jpg')
      #   line_bot_api.reply_message(event.reply_token,reply)
        # reply = TextSendMessage(text=f"A10")
-    elif reply_basic == 'B': 
-        reply = TextSendMessage(text=f"B10")
-    elif reply_basic == 'C': 
-        reply = TextSendMessage(text=f"C10")
-    elif reply_basic == 'D': 
-        reply = TextSendMessage(text=f"D10")
+    #elif reply_basic == 'B': 
+    #    reply = TextSendMessage(text=f"B10")
+    #elif reply_basic == 'C': 
+    #    reply = TextSendMessage(text=f"C10")
+    #elif reply_basic == 'D': 
+    #    reply = TextSendMessage(text=f"D10")
        
     #reply = TextSendMessage(text=f"hello")
     #reply = 'here'
